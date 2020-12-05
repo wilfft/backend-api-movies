@@ -4,7 +4,10 @@ const mongoose = require("mongoose");
 app.use(express.json());
 app.use("/api", require("./routes/movieRouter.js"));
 app.get("/", (req, res) => res.send("bem vindo"));
-app.listen(8000, () => console.log("API iniciada"));
+
+const port = process.env.PORT || 5000;
+
+app.listen(port, () => `Server running on port ${port} 🔥`);
 
 (async () => {
   try {
