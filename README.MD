@@ -11,5 +11,6 @@ NodeJs + MongoDb + deploy Heroku
 
 ##### Implementar a rota Delete
 
-$npm init
-npm install express mongoose
+ 
+npm install
+
